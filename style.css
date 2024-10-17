@@ -1,0 +1,42 @@
+/*
+Theme Name: Your Theme Child
+Template: your-theme
+*/
+.featured-blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.first-row, .second-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.col-1 {
+    width: 30%; /* For 3 columns in the first row */
+    margin: 10px;
+}
+
+.col-2 {
+    width: 45%; /* For 2 columns in the second row */
+    margin: 10px;
+}
+
+.second-row .col-2:last-child {
+    width: 95%; /* Second column spans across two columns */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .col-1, .col-2 {
+        width: 100%;
+    }
+}
